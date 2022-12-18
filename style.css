@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: magenta;
+}
+pre{
+    color: rgb(5, 179, 5);
+}
+span{
+    color: red;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: blue;
+    margin: 20px;
+}
+button{
+    all: unset;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

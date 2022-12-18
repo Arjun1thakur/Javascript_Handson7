@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Javascript Handson-7  <span>(DOM)</span></h1>
+            <h2 id="Q1">Q1. Write the code to access element which is having id as "text"</h2>
+            <h2><pre>Ans.
+        let mess=document.getElementById('Q1');
+        console.log(mess.innerText);
+            </pre></h2>
+
+            <h2>Q2. Write the code to access element which is having tag as "h1"</h2>
+            <h2><pre>Ans.
+        let mess=document.getElementsByTagName('h1');
+        console.log(mess);
+        console.log(mess[0]);
+            </pre></h2>
+
+            <h2 class="box">Q3. Write the code to access element which is having class as "box"</h2>
+            <h2><pre>Ans.
+        let mess=document.getElementsByClassName('box');
+        console.log(mess[0]);
+            </pre></h2> 
+            <h1 id="change">Hello </h1>
+            <h2>Q4. "Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h2>
+            <h2><pre>Ans.
+        let ok = document.getElementById('change');
+        ok.innerText = 'Hello World';
+            </pre></h2> 
+
+            <h2>Q5. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h2>
+            <div class="cards">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <button id="click">🤜 click 🤜</button>
+
+            <h2>Q6. What’s the difference between window vs document?</h2>
+            <h2>Ans.</h2> 
+            <table border="1px" align="center" cellpadding="10px" >
+                <tr>
+                    <th>document</th>
+                    <th>window</th>
+                </tr>
+                <tr>
+                    <td>It represents any HTML document or web page that is loaded in the browser.</td>
+                    <td>It represents a browser window or frame that displays the contents of the webpage. </td>
+                </tr>
+                <tr>
+                    <td>It is loaded inside the window.</td>
+                    <td>It is the very first object that is loaded in the browser.</td>
+                </tr>
+                <tr>
+                    <td>It is the object of window property.</td>
+                    <td>It is the object of the browser.</td>
+                </tr>
+                <tr>
+                    <td>All the tags, elements with attributes in HTML are part of the document.</td>
+                    <td>Global objects, functions, and variables of JavaScript are members of the window object.</td>
+                </tr>
+                <tr>
+                    <td>We can access the document from a window using the window. document</td>
+                    <td>We can access the window from the window only. i.e. window.window</td>
+                </tr>
+                <tr>
+                    <td>The document is part of BOM (browser object model) and dom (Document object model)</td>
+                    <td>The window is part of BOM, not DOM.</td>
+                </tr>
+                <tr>
+                    <td>Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title</td>
+                    <td>Properties of the window object cannot be accessed by the document object.</td>
+                </tr>
+                <tr>
+                    <td>syntax:
+
+                        document.propertyname;</td>
+                    <td>syntax:
+
+                        window.propertyname;</td>
+                </tr>
+                <tr>
+                    <td>example:
+
+                        document.title :  will return the title of the document</td>
+                    <td>example:
+
+                        window.innerHeight : will return the height of the content area of the browser</td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>
